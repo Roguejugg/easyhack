@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href=".\libs\bootstrap.min.css" rel="stylesheet">
+	<title>site</title>
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="padding:0;margin:0;background-color:#151111;">
+	<div class="overlay" id="overlay">
+		<div class="faq" id="faq">
+			<div class="close" onclick="closes()"></div>
+		</div>
+		<div class="faqq" id="reviewss">
+			<input class="classinput1" id="orderid" placeholder="Order ID" maxlength="16">
+			<input class="classinput1" id="displayednickname" placeholder="Displayed nickname" maxlength="16">
+			<textarea class="classinput2" id="yourreview" placeholder="Your review" maxlength=""></textarea>
+			<div class="close" onclick="closes()"></div>
+			<div class="submit" onclick="submittext()" id="submit">Leave a review</div>
+			<div class="submittext" id="submittext" style="display: none;">Wrong order ID!</div>
+		</div>
+	</div>
+	<div class="topbar" id="topbar">
+		<div class="intopbar">
+			<span class="topbarblock" id="block1">Main</span>
+			<span class="topbarblock" onclick="aboutus()" id="block2">About us</span>
+			<span class="topbarblock" onclick="cheats()" id="block3">Cheats</span>
+
+			
+						<span class="topbarblock" onclick="reviews()" id="block4">Reviews</span>
+		</div>
+		<div class="languagebox">
+			<div class="inlanguagebox1" onclick="language()">
+				<span class="language" id="language1">EN</span><i class="arrow down"></i>
+			</div>
+			<div class="inlanguagebox2" id="inlanguagebox2" onclick="ru()">
+				<span class="language" id="language2">RU</span>
+			</div>
+		</div>
+	</div>
+	<div class="slide1">
+		<div class="mainslide">
+			<div class="name" align="center" id="name">
+				<span id="name1">EASYHACK</span>
+				<span id="name2">PRIVATE CHEATS</span>	
+			</div>
+		</div>
+		<span class="namebot" id="namebot">YOU CAN RELY ON US</span>	
+	</div>
+	<div class="slide2">
+		<img src="img\grap1.png" class="grap1">
+		<img src="img\grap2.png" class="grap2">
+		<img src="img\grap1.png" class="grap3">
+		<img src="img\grap2.png" class="grap4">
+		<div class="inslide2" id="inslide2">
+			<span class="inslide2block1" id="inslideblock1" align="left">Cheats by most reliable coders. Collection constantly repleshined with new cheat functions, 100% guaranteed protection against ban, because quality - the most important goal for our team</span>
+			<div class="inslide2block2" id="inslideblock2">
+				<div class="inslide2block2bl"><img src="https://thumb.tildacdn.com/tild3738-6439-4439-b937-383337366334/-/cover/82x82/center/center/-/format/webp/icons8--24--64.png" class="tickimg"><span class="inslide2block2block" id="inslide2blockk1">Online supporting undetected status</span></div>
+				
+				<div class="inslide2block2bl"><img src="https://thumb.tildacdn.com/tild6561-6234-4364-a264-356635373231/-/cover/82x82/center/center/-/format/webp/icons8--64.png" class="tickimg"><span class="inslide2block2block" id="inslide2blockk3">Ergonomic design, intuitive interface</span></div>
+				<div class="inslide2block2bl"><img src="https://thumb.tildacdn.com/tild6638-3665-4533-b636-343536666463/-/cover/82x82/center/center/-/format/webp/icons8---64.png" class="tickimg"><span class="inslide2block2block" id="inslide2blockk4">Fast activation, 100% performance without breakdowns</span></div>
+				<div class="inslide2block2bl"><img src="https://thumb.tildacdn.com/tild3763-6138-4839-a632-306338323165/-/cover/82x82/center/center/-/format/webp/icons8--64.png" class="tickimg"><span class="inslide2block2block" id="inslide2blockk2">24/7 technical support</span></div>
+				<div class="inslide2block2bl"><img src="https://thumb.tildacdn.com/tild3532-3164-4661-b961-303634313564/-/cover/82x82/center/center/-/format/webp/icons8--64.png" class="tickimg"><span class="inslide2block2block" id="inslide2blockk5">Large number of satisfied users</span></div>
+
+
+			</div>
+		</div>
+	</div>
+	<div class="slide3">
+		<div class="inslide3" id="inslide3">
+			<div class="cheats">
+				<div class="cheatsblock" style="box-shadow: 0 0 20px 2px orange;border:1px solid orange;background:url(img/eft1.jpg) right;">
+					<div class="chname"><span class="inchname1">EFT</span><span class="inchname2">FULL</div>
+						<div class="cheatsblockblock">
+						<span class="cheatstext"><img src="img\checkedwhite.png" class="tick2"><span class="cheatstextline1">Full version of the cheat with all the features</span></span>
+						<span class="cheatstext"><img src="img\checkedwhite.png" class="tick2"><span class="cheatstextline2">Works on every platform properly</span></span>
+						<span class="cheatstext"><img src="img\checkedwhite.png" class="tick2"><span class="cheatstextline3">Does not give FPS drawdown, supports all window modes</span></span>
+						<span class="cheatstext"><img src="img\checkedwhite.png" class="tick2"><span class="cheatstextline4">Undetected status</span></span>	
+					</div>
+					<div class="button1" onclick="location.href='info.html'"><span class="button1text">Read more</span></div>
+					<div class="button2" onclick="location.href='download.html'"><span class="button2text">Try for free</span></div>
+					<div class="button3" onclick="location.href='nginx.html'"><span class="button3text">Buy</span></div>
+				</div>
+				<div class="cheatsblock" style="box-shadow: 0 0 20px 2px white;background:url(img/pubg.jpg) center;">
+					<div class="chname"><span class="inchname1">PUBG</span><span class="inchname2">FULL</div>
+					<div class="cheatsblockblock">
+						<span class="cheatstext"><img src="img\checkedwhite.png" class="tick2"><span class="cheatstextline1">Full version of the cheat with all the features</span></span>
+						<span class="cheatstext"><img src="img\checkedwhite.png" class="tick2"><span class="cheatstextline2">Works on every platform properly</span></span>
+						<span class="cheatstext"><img src="img\checkedwhite.png" class="tick2"><span class="cheatstextline3">Does not give FPS drawdown, supports all window modes</span></span>
+						<span class="cheatstext"><img src="img\checkedwhite.png" class="tick2"><span class="cheatstextline4">Undetected status</span></span>		
+					</div>
+					<div class="button1" onclick="location.href='info.html'"><span class="button1text">Read more</span></div>
+					<div class="button2" onclick="location.href='download.html'"><span class="button2text">Try for free</span></div>
+					<div class="button3" onclick="location.href='nginx.html'"><span class="button3text">Buy</span></div>
+				</div>
+				
+				<div class="cheatsblock" style="box-shadow: 0 0 20px 2px red;border:1px solid red;background:url(img/rust.png) left;">
+					<div class="chname"><span class="inchname1">RUST</span><span class="inchname2">FULL</div>
+						<div class="cheatsblockblock">
+						<span class="cheatstext"><img src="img\checkedwhite.png" class="tick2"><span class="cheatstextline1">Full version of the cheat with all the features</span></span>
+						<span class="cheatstext"><img src="img\checkedwhite.png" class="tick2"><span class="cheatstextline2">Works on every platform properly</span></span>
+						<span class="cheatstext"><img src="img\checkedwhite.png" class="tick2"><span class="cheatstextline3">Does not give FPS drawdown, supports all window modes</span></span>
+						<span class="cheatstext"><img src="img\checkedwhite.png" class="tick2"><span class="cheatstextline4">Undetected status</span></span>			
+					</div>
+					<div class="button1"><span class="button1text" onclick="location.href='info.html'">Read more</span></div>
+					<div class="button2" onclick="location.href='download.html'"><span class="button2text">Try for free</span></div>
+					<div class="button3" onclick="location.href='nginx.html'"><span class="button3text">Buy</span></div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="slide4">
+		<div class="inslide4" id="inslide4">
+			<div class="reviews">
+				<div class="arroww arrow-leftt" onclick="previousSlide()"></div>
+				<div class="slider">
+					<div class="item">
+						<div class="gametext__itemtext">
+							<div class="gametext">
+							<span class="gametext1">Cheat:</span>
+							<span class="gametext2">EFT FULL</span>
+						</div>
+						<span class="initemtext" align="center">Сайт з портфоліо для ЕПК ЗНУ ;) Увесь дизайн - самостійно, присутня мобільна версія</span>
+						
+						</div>
+						<div class="initem">
+							<span class="initem1">by:</span>
+							<span class="initem2">Данило</span>
+						</div>
+
+					</div>
+					<div class="item">
+						<div class="gametext__itemtext">
+							<div class="gametext">
+							<span class="gametext1">Cheat:</span>
+							<span class="gametext2">EFT FULL</span>
+						</div>
+						<span class="initemtext" align="center">nice</span>
+					</div>
+						<div class="initem">
+							<span class="initem1">by:</span>
+							<span class="initem2">AlienStrike</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="gametext__itemtext">
+							<div class="gametext">
+							<span class="gametext1">Cheat:</span>
+							<span class="gametext2">Rust FULL</span>
+						</div>
+						<span class="initemtext" align="center">классный чит, андетект</span>
+					</div>	
+						<div class="initem">
+							<span class="initem1">by:</span>
+							<span class="initem2">frozzy</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="arroww arrow-rightt" onclick="nextSlide()">
+			</div>
+		</div>
+		<div class="leftreview" onclick="leftreview()" id="leftreview">Leave a review</div>
+	</div>
+	<script src="libs/anime.js"></script>
+	<script>
+		function glavnaya(){
+			var element=document.getElementById("topbar");
+			element.scrollIntoView({block: "center", behavior: "smooth"});
+		}
+		function aboutus(){
+			var element=document.getElementById("inslide2");
+			element.scrollIntoView({block: "center", behavior: "smooth"});
+		}
+		function cheats(){
+			var element=document.getElementById("inslide3");
+			element.scrollIntoView({block: "center", behavior: "smooth"});
+		}
+		function reviews(){
+			var element=document.getElementById("inslide4");
+			element.scrollIntoView({block: "center", behavior: "smooth"});
+		}
+	</script>
+	<script>
+		let slideIndex = 1;
+showSlides(slideIndex);
+function nextSlide() {
+    showSlides(slideIndex += 1);
+}
+function previousSlide() {
+    showSlides(slideIndex -= 1);  
+}
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+function showSlides(n) {
+    let slides = document.getElementsByClassName("item");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (let slide of slides) {
+        slide.style.display = "none";
+        slide.style.display = "left:100%;";
+    }
+    slides[slideIndex - 1].style.display = "flex"; 
+    anime({
+				targets: slides[slideIndex - 1],
+				left: '0%',
+				duration: '600',
+				easing: 'easeInQuad'
+			});   
+}
+	
+	</script>
+	<script>
+		function faq(){
+			document.getElementById('overlay').style.display="flex";
+			document.getElementById('faq').style.display="flex";
+			anime({
+				targets: '#overlay',
+				opacity: '1',
+				duration: '600',
+				easing: 'easeInQuad'
+			});
+			anime({
+				targets: '#faq',
+				opacity:'1',
+				duration:'600',
+				top: '50%',
+				easing: 'easeInQuad'
+			});
+		};
+		function closes(){
+			anime({
+				targets: '#overlay',
+				opacity: '0',
+				duration: '600',
+				easing: 'easeInQuad'
+			});
+			anime({
+				targets: '#faq',
+				opacity:'0',
+				duration:'600',
+				top: '70%',
+				easing: 'easeInQuad'
+			});
+			anime({
+				targets: '#reviewss',
+				opacity:'0',
+				duration:'600',
+				top: '70%',
+				easing: 'easeInQuad'
+			});
+
+			setTimeout(function() {	
+		document.getElementById('overlay').style.display="none";
+		document.getElementById('faq').style.display="none";
+		document.getElementById('faq').style.top="30%";
+		document.getElementById('reviewss').style.display="none";
+		document.getElementById('reviewss').style.top="30%";
+		anime({
+				targets: '#faq',
+				opacity:'0',
+				duration:'600',
+				top: '30%',
+				easing: 'easeInQuad'
+			});
+		anime({
+				targets: '#reviewss',
+				opacity:'0',
+				duration:'600',
+				top: '30%',
+				easing: 'easeInQuad'
+			});
+	}, 601);
+
+		}
+		function language(){
+
+			  
+
+			if (document.getElementById("inlanguagebox2").style.display == 'flex') {
+
+			anime({
+				targets: '#inlanguagebox2',
+				height: '0px',
+				duration: '400',
+				easing: 'linear'
+			});
+			setTimeout(function() {
+				document.getElementById('inlanguagebox2').style.display="none";
+			}, 400);
+			}
+		else if(document.getElementById("language1").textContent=="RU"){
+			document.getElementById('inlanguagebox2').style.display="flex";
+			anime({
+				targets: '#inlanguagebox2',
+				height: '42px',
+				duration: '400',
+				easing: 'linear'
+			});
+			}
+		else{
+			document.getElementById('inlanguagebox2').style.display="flex";
+			anime({
+				targets: '#inlanguagebox2',
+				height: '42px',
+				duration: '400',
+				easing: 'linear'
+
+			});
+			}
+		}
+		function ru(){
+			if(document.getElementById("language1").textContent=="EN"){
+
+				document.getElementById("block1").textContent="Главная";
+				document.getElementById("block2").textContent="О нас";
+				document.getElementById("block3").textContent="Читы";
+				document.getElementById("block4").textContent="Отзывы";
+				document.getElementById("name1").textContent="EASYHACK";
+				document.getElementById("name2").textContent="ПРИВАТНЫЙ СОФТ";
+				document.getElementById("namebot").textContent="ТЫ МОЖЕШЬ ДОВЕРЯТЬ НАМ";
+				document.getElementById("inslideblock1").textContent="Самые надежные читы от проверенных кодеров! Коллекция постоянно пополняется новыми функциями читов, поддерживается 100% гарантия защиты от бана, ведь качество - самое главное для наших клиентов";
+				document.getElementById("inslide2blockk1").textContent="Онлайн поддержка андетект-статуса";
+				document.getElementById("inslide2blockk2").textContent="Огромное количество функций в читах";
+				document.getElementById("inslide2blockk3").textContent="Эргономичный дизайн, интуитивно понятный интерфейс";
+				document.getElementById("inslide2blockk4").textContent="Быстрая активация чита, 100% работоспособность без поломок";
+				document.getElementById("inslide2blockk5").textContent="Большое количество довольных пользователей";
+				let button1text=document.getElementsByClassName("button1text");
+				let button2text=document.getElementsByClassName("button2text");
+				let button3text=document.getElementsByClassName("button3text");
+				for(let i=0; i<button1text.length; i++){
+					button1text[i].textContent="Читать больше";
+				}
+				for(let i=0; i<button1text.length; i++){
+					button2text[i].textContent="Попробовать бесплатно";
+				}
+				for(let i=0; i<button1text.length; i++){
+					button3text[i].textContent="Купить";
+				}
+				document.getElementById("leftreview").textContent="Оставить отзыв";
+				document.getElementById("submit").textContent="Оставить отзыв";
+				let gametext1=document.getElementsByClassName("gametext1");
+				let initem1=document.getElementsByClassName("initem1");
+				for(let i=0; i<gametext1.length; i++){
+					gametext1[i].textContent="Чит:";
+				}
+				for(let i=0; i<initem1.length; i++){
+					initem1[i].textContent="от:";
+				}
+				let cheatstextline1=document.getElementsByClassName("cheatstextline1");
+				let cheatstextline2=document.getElementsByClassName("cheatstextline2");
+				let cheatstextline3=document.getElementsByClassName("cheatstextline3");
+				let cheatstextline4=document.getElementsByClassName("cheatstextline4");
+				for(let i=0; i<cheatstextline1.length; i++){
+					cheatstextline1[i].textContent="Полная версия чита со всеми функциями";
+				}
+				for(let i=0; i<cheatstextline2.length; i++){
+					cheatstextline2[i].textContent="Кроссплатформенность";
+				}
+				for(let i=0; i<cheatstextline3.length; i++){
+					cheatstextline3[i].textContent="Не дает проседания фпс, поддерживаются все режимы окна";
+				}
+				for(let i=0; i<cheatstextline4.length; i++){
+					cheatstextline4[i].textContent="Необнаруженный статус";
+				}
+				document.getElementById("orderid").placeholder="Номер заказа";
+				document.getElementById("displayednickname").placeholder="Отображаемый ник";
+				document.getElementById("yourreview").placeholder="Ваш отзыв";
+
+
+				
+
+
+				anime({
+					targets: '#inlanguagebox2',
+					height: '0px',
+					duration: '400',
+					easing: 'linear'
+				});
+				document.getElementById("language1").textContent="RU";
+				document.getElementById("language2").textContent="EN";
+				setTimeout(function(){
+					document.getElementById('inlanguagebox2').style.display="none";
+				}, 400);
+			}
+
+			else{
+				document.getElementById("block1").textContent="Main";
+				document.getElementById("block2").textContent="About us";
+				document.getElementById("block3").textContent="Cheats";
+				document.getElementById("block4").textContent="Reviews";
+				document.getElementById("name1").textContent="EASYHACK";
+				document.getElementById("name2").textContent="PRIVATE CHEATS";
+				document.getElementById("namebot").textContent="YOU CAN RELY ON US";
+				document.getElementById("inslideblock1").textContent="Cheats by most reliable coders. Collection constantly repleshined with new cheat functions, 100% guaranteed protection against ban, because quality - the most important goal for our team";
+				document.getElementById("inslide2blockk1").textContent="Online supporting undetected status";
+				document.getElementById("inslide2blockk2").textContent="24/7 technical support";
+				document.getElementById("inslide2blockk3").textContent="Ergonomic design, intuitive interface";
+				document.getElementById("inslide2blockk4").textContent="Fast activation, 100% performance without breakdowns";
+				document.getElementById("inslide2blockk5").textContent="Large number of satisfied users";
+				let button1text=document.getElementsByClassName("button1text");
+				let button2text=document.getElementsByClassName("button2text");
+				let button3text=document.getElementsByClassName("button3text");
+				for(let i=0; i<button1text.length; i++){
+					button1text[i].textContent="Read more";
+				}
+				for(let i=0; i<button1text.length; i++){
+					button2text[i].textContent="Try for free";
+				}
+				for(let i=0; i<button1text.length; i++){
+					button3text[i].textContent="Buy";
+				}
+				document.getElementById("leftreview").textContent="Leave a review";
+				document.getElementById("submit").textContent="Leave a review";
+				let gametext1=document.getElementsByClassName("gametext1");
+				let initem1=document.getElementsByClassName("initem1");
+				for(let i=0; i<gametext1.length; i++){
+					gametext1[i].textContent="Cheat:";
+				}
+				for(let i=0; i<initem1.length; i++){
+					initem1[i].textContent="by:";
+				}
+				let cheatstextline1=document.getElementsByClassName("cheatstextline1");
+				let cheatstextline2=document.getElementsByClassName("cheatstextline2");
+				let cheatstextline3=document.getElementsByClassName("cheatstextline3");
+				let cheatstextline4=document.getElementsByClassName("cheatstextline4");
+				for(let i=0; i<cheatstextline1.length; i++){
+					cheatstextline1[i].textContent="Full version of the cheat with all the features";
+				}
+				for(let i=0; i<cheatstextline2.length; i++){
+					cheatstextline2[i].textContent="Works on every platform properly";
+				}
+				for(let i=0; i<cheatstextline3.length; i++){
+					cheatstextline3[i].textContent="Does not give FPS drawdown, supports all window modes";
+				}
+				for(let i=0; i<cheatstextline4.length; i++){
+					cheatstextline4[i].textContent="Undetected status";
+				}
+				document.getElementById("orderid").placeholder="Order ID";
+				document.getElementById("displayednickname").placeholder="Displayed nickname";
+				document.getElementById("yourreview").placeholder="Your review";
+
+
+				anime({
+					targets: '#inlanguagebox2',
+					height: '0px',
+					duration: '400',
+					easing: 'linear'
+				});
+				document.getElementById("language1").textContent="EN";
+				document.getElementById("language2").textContent="RU";
+				setTimeout(function(){
+					document.getElementById('inlanguagebox2').style.display="none";
+				}, 400);
+			}
+		}
+		function leftreview(){
+			document.getElementById('overlay').style.display="flex";
+			document.getElementById('reviewss').style.display="flex";
+			anime({
+				targets: '#overlay',
+				opacity: '1',
+				duration: '600',
+				easing: 'easeInQuad'
+			});
+			anime({
+				targets: '#reviewss',
+				opacity:'1',
+				duration:'600',
+				top: '50%',
+				easing: 'easeInQuad'
+			});
+		};
+		function submittext(){
+		document.getElementById('submittext').style.display='block';
+		if(document.getElementById("language1").textContent === "RU"){
+			document.getElementById('submittext').textContent="Неправильный номер заказа!";
+		}else if(document.getElementById("language1").textContent === "EN"){
+			document.getElementById('submittext').textContent="Wrong order ID!";
+		}else{}
+		document.getElementById('orderid').value='';
+	}
+	</script>
+</body>
+</html>
